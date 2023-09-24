@@ -97,7 +97,7 @@ exports.passwordReset = (req, res, next) => {
           .send({ message: "Password reset link sent successfully" });
         transporter.sendMail({
           to: req.body.email,
-          from: "javascripters@gmail.com",
+          from: "Bhawana1@gmail.com",
           subject: "Password Reset",
           html: `<p>You requested a password reset</p>
                 <p>Please click this <a href="/https://localhost:3000/reset/${token}">link</a> to set a new password</p>
